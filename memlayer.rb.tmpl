@@ -18,6 +18,6 @@ class Memlayer < Formula
   end
 
   test do
-    assert_match "memlayer", shell_output("#{bin}/memlayer --help 2>&1", 0)
+    assert_match "Usage: memlayer", shell_output("#{bin}/memlayer --help 2>&1", 1)
   end
 end
