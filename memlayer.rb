@@ -1,9 +1,9 @@
 class Memlayer < Formula
   desc "Memory layer for LLM applications"
   homepage "https://github.com/alenkis/memlayer"
-  version "0.1.0"
-  url "https://github.com/alenkis/memlayer/releases/download/v0.1.0/memlayer-0.1.0.tar.gz"
-  sha256 "PLACEHOLDER"
+  version "0.0.1"
+  url "https://github.com/alenkis/memlayer/releases/download/v0.0.1/memlayer-0.0.1.tar.gz"
+  sha256 "4f26ced85852719a7eb0cf266b6e2b454c5f4a65b60990765e01fa9a1a2f5133"
   license "AGPL-3.0-only"
 
   depends_on "openjdk@22"
