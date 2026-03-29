@@ -6,7 +6,7 @@ class Memlayer < Formula
   sha256 "{{sha256}}"
   license "AGPL-3.0-only"
 
-  depends_on "openjdk@22"
+  depends_on "openjdk"
 
   def install
     libexec.install "bin/memlayer.jar"
@@ -14,7 +14,7 @@ class Memlayer < Formula
     chmod 0755, libexec/"memlayer"
 
     (bin/"memlayer").write_env_script libexec/"memlayer",
-      JAVA_HOME: Formula["openjdk@22"].opt_prefix
+      JAVA_HOME: Formula["openjdk"].opt_prefix
   end
 
   test do
